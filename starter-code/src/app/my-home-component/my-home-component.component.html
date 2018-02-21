@@ -1,0 +1,7 @@
+<div class="container">
+  <div *ngFor=" let oneMovie of allMovies">
+  <div><p>{{oneMovie.room}}</p></div>
+  <div><img src="{{oneMovie.poster}}" width="100"></div>
+  <div><p> {{oneMovie.title}}</p></div>
+  <div><button (click)="viewDetails(oneMovie.id)"> Go to detail</button></div>
+</div>
